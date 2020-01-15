@@ -13,9 +13,9 @@
 
   <!-- NAVIGATION MENU -->
     <div class="col-12 mt-4 mb-4">
-      <ul class="nav justify-content-center">
+      <!-- <ul class="nav justify-content-center">
         <li class="nav-item p-1">
-          <a class="nav-link btn btn-primary btn-sm active" href="#">ALL</a>
+          <a class="nav-link btn btn-primary btn-sm active" href="#">ALL</a> -->
           <?php
             wp_nav_menu(
               array(
