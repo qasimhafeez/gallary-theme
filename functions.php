@@ -24,6 +24,13 @@ function load_js(){
     wp_enqueue_script('bootstrap-js');
 }
 
+// Menu
+register_nav_menus(
+    array(
+        'top-menu' => 'Top Menu',
+        'mobile-menu' => 'Mobile Menu',
+    )
+);
 
 
 
@@ -31,3 +38,4 @@ function load_js(){
 add_action('after_setup_theme', 'theme_setup');
 add_action('wp_enqueue_scripts', 'load_css');
 add_action('wp_enqueue_scripts', 'load_js');
+add_theme_support('menus');

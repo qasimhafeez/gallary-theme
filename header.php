@@ -8,3 +8,23 @@
   <title><?php bloginfo('name'); ?></title>
 </head>
 <body <?php body_class(); ?>>
+<div class="container">
+  <div class="row">
+
+  <!-- NAVIGATION MENU -->
+    <div class="col-12 mt-4 mb-4">
+      <ul class="nav justify-content-center">
+        <li class="nav-item p-1">
+          <a class="nav-link btn btn-primary btn-sm active" href="#">ALL</a>
+          <?php
+            wp_nav_menu(
+              array(
+                'theme_location' => 'top-menu',
+                'menu_class' => 'nav justify-content-center',
+
+              )
+            );
+          ?>
+        </li>
+      </ul>
+    </div>
