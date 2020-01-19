@@ -47,6 +47,14 @@ function modify_menuclass($ulclass) {
 }
 add_filter('wp_nav_menu', 'modify_menuclass');
 
+// show custom post types on index page
+function show_custom_posts( $query ) {
+    if ( ($query->is_home() ||  $query->is_category()) && $query->is_main_query() ) {
+        $query->set( 'post_type', array( 'post', 'gallery' ) );
+    }
+}
+add_action( 'pre_get_posts', 'show_custom_posts' );
+
 
 // Hooks
 add_action('wp_enqueue_scripts', 'load_css');
