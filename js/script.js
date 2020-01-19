@@ -16,7 +16,9 @@
       $el = $(this);
       URL = $el.attr("href").substring(1);
       URL = URL + "#inside";
-
       $content.load(URL, function() {});
     });
+  "#all".click(function() {
+    $content.load("wordpress_theme/");
+  });
 })(jQuery);

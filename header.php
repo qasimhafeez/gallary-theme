@@ -13,10 +13,7 @@
 
   <!-- NAVIGATION MENU -->
     <div class="col-12 mt-4 mb-4">
-      <ul class="nav justify-content-center">
-        <li class="nav-item p-1">
-          <a class="nav-link btn btn-primary btn-sm active" href="#all" id="all">ALL</a>
-          </li>
+      <ul class="nav justify-content-center" id="nav">
           <?php
             wp_nav_menu(
               array(
