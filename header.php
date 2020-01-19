@@ -8,14 +8,14 @@
   <title><?php bloginfo('name'); ?></title>
 </head>
 <body <?php body_class(); ?>>
-<div class="container">
+<div class="container" id="content">
   <div class="row">
 
   <!-- NAVIGATION MENU -->
     <div class="col-12 mt-4 mb-4">
       <ul class="nav justify-content-center">
         <li class="nav-item p-1">
-          <a class="nav-link btn btn-primary btn-sm active" href="/wordpress_theme">ALL</a>
+          <a class="nav-link btn btn-primary btn-sm active" href="#all" id="all">ALL</a>
           </li>
           <?php
             wp_nav_menu(
