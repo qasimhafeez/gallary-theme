@@ -36,3 +36,7 @@ body {
   background-color: #46b2b4;
   border-color: #46b2b4;
 }
+
+img.img-fluid.wp-post-image:hover {
+  opacity: 0.7;
+}
